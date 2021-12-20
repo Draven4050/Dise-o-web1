@@ -20,7 +20,47 @@
   }
   
   /* Menu navegacion */
+
+  /* Menu Responsivo con animaciones */
+.navegador {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #FFF;
+    height: 100px;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+  }
+   /* li o item list es para declarar los elementos de la lista valga la redundancia */
+  .navegador li {
+    float: left;
+    position: relative;
+      list-style: none;
+  }
+  .navegador li a {
+    display: block;
+    text-decoration: none;
+    padding: 12px 20px;
+    text-align: center;
+    color: #777;
+    border-right: 1px solid #E7E7E7;
+  }
+  .navegador li a i {
+    display: block;
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .navegador li a strong {
+    display: block;
+    text-transform: uppercase;
+  }
+  .navegador li a small {
+    display: block;
+    font-size: 10px;
+  }
   
+
 
   /* acomodanav.navegador */
   
@@ -218,10 +258,215 @@
     max-width: 100%;
   }
 }
-
+/* Menu Responsivo con animaciones */
+.navegador {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #FFF;
+  height: 100px;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+}
+ /* li o item list es para declarar los elementos de la lista valga la redundancia */
+.navegador li {
+  float: left;
+  position: relative;
+    list-style: none;
+}
+.navegador li a {
+  display: block;
+  text-decoration: none;
+  padding: 12px 20px;
+  text-align: center;
+  color: #777;
+  border-right: 1px solid #E7E7E7;
+}
+.navegador li a i {
+  display: block;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.navegador li a strong {
+  display: block;
+  text-transform: uppercase;
+}
+.navegador li a small {
+  display: block;
+  font-size: 10px;
+}
+.navegador li a i, .navegador li a strong, .navegador li a small {
+  position: relative;
+  
+  transition: all 300ms linear;
+  -o-transition: all 300ms linear;
+  -ms-transition: all 300ms linear;
+  -moz-transition: all 300ms linear;
+  -webkit-transition: all 300ms linear;
+}
+ /* el hover es para cuando pasa el mouse encima para las animaciones */
+.navegador li:hover > a i {
+    opacity: 1;
+    -webkit-animation: moveFromTop 300ms ease-in-out;
+    -moz-animation: moveFromTop 300ms ease-in-out;
+    -ms-animation: moveFromTop 300ms ease-in-out;
+    -o-animation: moveFromTop 300ms ease-in-out;
+    animation: moveFromTop 300ms ease-in-out;
+}
+.navegador li:hover a strong {
+    opacity: 1;
+    -webkit-animation: moveFromLeft 300ms ease-in-out;
+    -moz-animation: moveFromLeft 300ms ease-in-out;
+    -ms-animation: moveFromLeft 300ms ease-in-out;
+    -o-animation: moveFromLeft 300ms ease-in-out;
+    animation: moveFromLeft 300ms ease-in-out;
+}
+.navegador li:hover a small {
+    opacity: 1;
+    -webkit-animation: moveFromRight 300ms ease-in-out;
+    -moz-animation: moveFromRight 300ms ease-in-out;
+    -ms-animation: moveFromRight 300ms ease-in-out;
+    -o-animation: moveFromRight 300ms ease-in-out;
+    animation: moveFromRight 300ms ease-in-out;
+}
+.navegador li:hover > a {
+  color: #e67e22;
+}
+.navegador li a.active {
+  position: relative;
+  color: #e67e22;
+  border:0;
+  border-top: 4px solid #e67e22;
+  border-bottom: 4px solid #e67e22;
+  margin-top: -4px;
+  box-shadow: 0 0 5px #DDD;
+  -moz-box-shadow: 0 0 5px #DDD;
+  -webkit-box-shadow: 0 0 5px #DDD;
+}
+.navegador li a.active:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 45%;
+  border-top: 5px solid #e67e22;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+.navegador li ul,
+.navegador li ul li ul {
+  position: absolute;
+  height: auto;
+  min-width: 200px;
+  padding: 0;
+  margin: 0;
+  background: #FFF;
+  border-top: 4px solid #e67e22;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 300ms linear;
+  -o-transition: all 300ms linear;
+  -ms-transition: all 300ms linear;
+  -moz-transition: all 300ms linear;
+  -webkit-transition: all 300ms linear;
+  top: 130px;
+  z-index: 1000;
+}
+.navegador li ul:before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: 23%;
+  border-bottom: 5px solid #e67e22;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+.navegador li:hover > ul,
+.navegador li ul li:hover > ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  top: 100px;
+}
+.navegador li ul li {
+  float: none;
+}
+.navegador li ul li a {
+  padding: 10px;
+  text-align: left;
+  border: 0;
+  border-bottom: 1px solid #EEE;
+}
+.navegador li ul li a i {
+  font-size: 16px;
+  display: inline-block;
+  margin: 0 10px 0 0;
+}
+.navegador li ul li ul {
+  left: 230px;
+  top: 0;
+  border: 0;
+  border-left: 4px solid #e67e22;
+}  
+.navegador li ul li ul:before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: -14px;
+  border-right: 5px solid #e67e22;
+  border-bottom: 5px solid transparent;
+  border-top: 5px solid transparent;
+}
+.navegador li ul li:hover > ul {
+  top: 0px;
+  left: 200px;
+}
+.navegador li.float {
+  float: right;
+}
+.navegador li a.search {
+  padding: 29px 20px 30px 10px;
+}
+.navegador li a.search i {
+  margin: 0;
+  display: inline-block;
+  font-size: 18px;
+}
+.navegador li a.search input {
+  border: 1px solid #EEE;
+  padding: 10px;
+  background: #FFF;
+  outline: none;
+  color: #777;
+}
+.navegador li a.search button {
+  border: 1px solid #e67e22;
+  padding: 10px;
+  background: #e67e22;
+  outline: none;
+  color: #FFF;
+  margin-left: -4px;
+}
+.navegador li a.search input:focus {
+  border: 1px solid #e67e22;
+}
+/* Historia */
+.history {
+    margin: 20px;
+  }
+  
+  .history-para {
+    padding: 13px;
+  }
+  
+  .history-heading2 {
+    margin: 2px;
+    padding-top: 20px;
+  }
+  
 /* LUGARES FAMOSOS UYUNI */
 /* GALERIA DE IMAGENES */
-.image-gallery {
+.galeria_imagenes {
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
@@ -229,11 +474,11 @@
   margin-right: 10%;
 }
 
-.gallery {
+.galerias {
   border: 1px solid #ccc;
 }
 
-.gallery img {
+.galerias img {
   width: 100%;
   height: auto;
 }
