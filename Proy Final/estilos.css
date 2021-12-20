@@ -1,0 +1,360 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+ 
+  a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+  
+  /* Menu navegacion */
+  
+
+  /* acomodanav.navegador */
+  
+  
+  
+  hr {
+    margin: 10px 0;
+  }
+  
+  
+  
+  /* imagenes */
+  
+  .btn {
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: #262626;
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid #fff;
+  }
+  
+  .btn:hover {
+    opacity: 0.9;
+  }
+  
+  .imagenes {
+    width: 100%;
+    height: 550px;
+    background: url("./img/VicunaSalarDeUyuni_20170503.jpg") no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-end;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .imagenes h2,
+  .imagenes p {
+    margin-bottom: 10px;
+  }
+  
+  .imagenes .btn {
+    margin-top: 20px;
+  }
+  
+  /* tarjetas */
+  .tarjetas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin: 70px 0;
+  }
+  
+  .tarjetas img {
+    width: 100%;
+    height: 180px;
+  }
+  
+  .tarjetas h3 {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  
+  .tarjetas a {
+    padding: 10px 0;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+  }
+  
+  /* baner de cartas uno */
+  .baner {
+ 
+    width: 100%;
+    height: 350px;
+    background: url("./img/31-Salar-de-Uyuni20181201-479.jpg");
+    margin-bottom: 40px;
+  }
+  
+  .baner .content {
+    width: 40%;
+    padding: 90px 0 0 30px;
+    color: #fff;
+  }
+  
+  .baner p{
+    margin: 10px 0 20px 0;
+  }  
+  /* movil */
+  
+  
+    .tarjetas {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .baner .content{
+      width: 80%;
+    }
+  
+  
+  
+  @media (max-width: 500px) {
+    .tarjetas {
+      grid-template-columns: 1fr;
+    }
+  
+    .baner .content{
+      width: 100%;
+      padding: 60px 20px;
+    }
+    
+  }
+  .container {
+    position: relative;
+    margin: 0px auto;
+    padding: 0;
+    clear: both;
+}
+
+
+@media only screen and (min-width: 1200px) {
+  .container {
+      width: 1210px;
+  }
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+  .container {
+      width: 1030px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .container {
+      width: 682px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .container {
+      width: 428px;
+      margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .container {
+      width: 320px;
+      margin: 0 auto;
+  }
+}
+
+
+
+/* galeria de imagenes */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Crea cuatro columnas iguales que se sitúen una al lado de la otra */
+.column {
+  flex: 20%;
+  max-width: 20%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Diseño responsive - hace un diseño de dos columnas en lugar de cuatro columnas */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Diseño responsive: hace que las dos columnas se apilen una encima de la otra en lugar de estar al lado. */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* LUGARES FAMOSOS UYUNI */
+/* GALERIA DE IMAGENES */
+.image-gallery {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.gallery {
+  border: 1px solid #ccc;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.des {
+  padding: 15px;
+  text-align: center;
+}
+
+.responsive {
+  margin-top: 10px;
+  padding: 0 7px;
+  width: 290px;
+}
+
+/* FOOTER */
+.footer {
+  background: #303036;
+  color: #d3d3d3;
+  height: 400px;
+  position: relative;
+}
+
+.footer .footer-bottom {
+  background-color: #343a40;
+  color: #686868;
+  text-align: center;
+  height: 50px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.footer .footer-content {
+  height: 350px;
+  display: flex;
+}
+
+.footer .footer-content .footer-section {
+  flex: 1;
+  padding: 25px;
+}
+
+.footer .footer-content h1 {
+  color: white;
+}
+
+.footer-para {
+  margin: 10px 0;
+}
+
+.footer .footer-content .about .contact span {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1.1em;
+}
+
+.footer .footer-content .about .socials a {
+  border: 1px solid gray;
+  width: 45px;
+  height: 38px;
+  padding-top: 5px;
+  margin-right: 5px;
+  text-align: center;
+  display: inline-block;
+  font-size: 1.3em;
+  text-decoration: none;
+  color: #d3d3d3;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.footer .footer-content .about .socials a:hover {
+  color: white;
+  border: 1px solid white;
+  transition: all 0.3s;
+}
+
+.footer-section {
+  text-align: center;
+}
+
+.logo-text {
+  font-variant: initial;
+}
+
+.logo-text .logo-span {
+  color: #a2c376;
+}
+.socials a img{
+ margin-top: -10px;
+ width: 80%;
+}
+
+
+#footer .love {
+margin: 10px auto;
+text-align: center; }
+#footer .love .heartbeat {
+  color: #02b3a4;
+  font-size: 16px; }
+#footer .love a {
+  text-decoration: none; }
+
+.pac-container {
+width: 100%;
+margin: 0 auto;
+border-radius: 5px; }
+
+.pac-item, .pac-item-query {
+text-align: center;
+padding: 10px;
+font-family: inherit;
+font-size: inherit; }
+
+
+
+#footer p {
+  width: 50%; } 
+
+#footer p {
+  width: 50%; } 
