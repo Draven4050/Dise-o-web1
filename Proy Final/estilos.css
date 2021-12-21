@@ -2,11 +2,13 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: cursive;
+    
   }
   
  
   a {
-    color: #ffffff;
+    color: #5986aa;
     text-decoration: none;
   }
   
@@ -21,12 +23,12 @@
   
   /* Menu navegacion */
 
-  /* Menu Responsivo con animaciones */
+  /* Menu Responsivo  */
 .navegador {
     list-style: none;
     padding: 0;
     margin: 0;
-    background: #FFF;
+    background: rgb(146, 230, 233);
     height: 100px;
     border-radius: 2px;
     -moz-border-radius: 2px;
@@ -43,7 +45,7 @@
     text-decoration: none;
     padding: 12px 20px;
     text-align: center;
-    color: #777;
+    color: rgb(16, 37, 49);
     border-right: 1px solid #E7E7E7;
   }
   .navegador li a i {
@@ -75,13 +77,14 @@
   /* imagenes */
   
   .btn {
+    border-radius: 20%;
     cursor: pointer;
     display: inline-block;
     border: 0;
     font-weight: bold;
     padding: 10px 20px;
     background: #262626;
-    color: #fff;
+    color: rgb(90, 135, 172);
     font-size: 15px;
     border: 1px solid #fff;
   }
@@ -91,17 +94,19 @@
   }
   
   .imagenes {
+    font-family: cursive;
+    
+    border-radius: 20%;
     width: 100%;
-    height: 550px;
+    height: 800px;
     background: url("./img/VicunaSalarDeUyuni_20170503.jpg") no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     justify-content: flex-end;
-    padding-bottom: 50px;
-    margin-bottom: 20px;
-    color: #fff;
+    
+    color: rgb(50, 74, 126);
   }
   
   .imagenes h2,
@@ -109,21 +114,22 @@
     margin-bottom: 10px;
   }
   
-  .imagenes .btn {
-    margin-top: 20px;
+  imagenes .btn {
+    margin-top: 50px;
   }
   
   /* tarjetas */
   .tarjetas {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
+    gap: 50px;
     margin: 70px 0;
   }
   
   .tarjetas img {
+    border-radius: 20%;
     width: 100%;
-    height: 180px;
+    height: 390px;
   }
   
   .tarjetas h3 {
@@ -296,42 +302,10 @@
   display: block;
   font-size: 10px;
 }
-.navegador li a i, .navegador li a strong, .navegador li a small {
-  position: relative;
-  
-  transition: all 300ms linear;
-  -o-transition: all 300ms linear;
-  -ms-transition: all 300ms linear;
-  -moz-transition: all 300ms linear;
-  -webkit-transition: all 300ms linear;
-}
- /* el hover es para cuando pasa el mouse encima para las animaciones */
-.navegador li:hover > a i {
-    opacity: 1;
-    -webkit-animation: moveFromTop 300ms ease-in-out;
-    -moz-animation: moveFromTop 300ms ease-in-out;
-    -ms-animation: moveFromTop 300ms ease-in-out;
-    -o-animation: moveFromTop 300ms ease-in-out;
-    animation: moveFromTop 300ms ease-in-out;
-}
-.navegador li:hover a strong {
-    opacity: 1;
-    -webkit-animation: moveFromLeft 300ms ease-in-out;
-    -moz-animation: moveFromLeft 300ms ease-in-out;
-    -ms-animation: moveFromLeft 300ms ease-in-out;
-    -o-animation: moveFromLeft 300ms ease-in-out;
-    animation: moveFromLeft 300ms ease-in-out;
-}
-.navegador li:hover a small {
-    opacity: 1;
-    -webkit-animation: moveFromRight 300ms ease-in-out;
-    -moz-animation: moveFromRight 300ms ease-in-out;
-    -ms-animation: moveFromRight 300ms ease-in-out;
-    -o-animation: moveFromRight 300ms ease-in-out;
-    animation: moveFromRight 300ms ease-in-out;
-}
+ /* el hover es para cuando pasa el mouse encima para los colores */
+
 .navegador li:hover > a {
-  color: #e67e22;
+  color: #4f51d6;
 }
 .navegador li a.active {
   position: relative;
@@ -548,7 +522,7 @@
   display: inline-block;
   font-size: 1.3em;
   text-decoration: none;
-  color: #d3d3d3;
+  color: #95bdc9;
   border-radius: 5px;
   transition: all 0.3s;
 }
@@ -559,17 +533,7 @@
   transition: all 0.3s;
 }
 
-.footer-section {
-  text-align: center;
-}
 
-.logo-text {
-  font-variant: initial;
-}
-
-.logo-text .logo-span {
-  color: #a2c376;
-}
 .socials a img{
  margin-top: -10px;
  width: 80%;
@@ -585,21 +549,12 @@ text-align: center; }
 #footer .love a {
   text-decoration: none; }
 
-.pac-container {
-width: 100%;
-margin: 0 auto;
-border-radius: 5px; }
 
-.pac-item, .pac-item-query {
-text-align: center;
-padding: 10px;
-font-family: inherit;
-font-size: inherit; }
 
 
 
 #footer p {
-  width: 50%; } 
+  width: 10%; } 
 
 #footer p {
-  width: 50%; } 
+  width: 10%; } 
