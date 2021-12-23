@@ -212,35 +212,9 @@
   padding: 0 4px;
 }
 
-/* Crea cuatro columnas iguales que se sitúen una al lado de la otra */
-.column {
-  flex: 20%;
-  max-width: 20%;
-  padding: 0 4px;
-}
 
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-}
 
-/* Diseño responsive - hace un diseño de dos columnas en lugar de cuatro columnas */
-@media screen and (max-width: 800px) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-/* Diseño responsive: hace que las dos columnas se apilen una encima de la otra en lugar de estar al lado. */
-@media screen and (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
-}
-/* Menu Responsivo con animaciones */
+/* Menu Responsivo  */
 .navegador {
   list-style: none;
   padding: 0;
@@ -281,7 +255,7 @@
  /* el hover es para cuando pasa el mouse encima para los colores */
 
 .navegador li:hover > a {
-  color: #4f51d6;
+  color: #6263c4;
 }
 
 
