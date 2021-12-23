@@ -159,7 +159,7 @@
     font-weight: bold;
   }
   
-  /* baner de cartas uno */
+  /* baner  */
   .baner {
  
     width: 100%;
@@ -201,45 +201,7 @@
     }
     
   }
-  .container {
-    position: relative;
-    margin: 0px auto;
-    padding: 0;
-    clear: both;
-}
-
-
-@media only screen and (min-width: 1200px) {
-  .container {
-      width: 1210px;
-  }
-}
-
-@media only screen and (min-width: 960px) and (max-width: 1199px) {
-  .container {
-      width: 1030px;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-  .container {
-      width: 682px;
-  }
-}
-
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  .container {
-      width: 428px;
-      margin: 0 auto;
-  }
-}
-
-@media only screen and (max-width: 479px) {
-  .container {
-      width: 320px;
-      margin: 0 auto;
-  }
-}
+ 
 
 
 
@@ -359,21 +321,7 @@
   display: inline-block;
   margin: 0 10px 0 0;
 }
-.navegador li ul li ul {
-  left: 230px;
-  top: 0;
-  border: 0;
-  border-left: 4px solid #e67e22;
-}  
-.navegador li ul li ul:before {
-  content: "";
-  position: absolute;
-  top: 15px;
-  left: -14px;
-  border-right: 5px solid #e67e22;
-  border-bottom: 5px solid transparent;
-  border-top: 5px solid transparent;
-}
+
 .navegador li ul li:hover > ul {
   top: 0px;
   left: 200px;
@@ -469,45 +417,6 @@
   margin-bottom: 8px;
   font-size: 1.1em;
 }
-
-.footer .footer-content .about .socials a {
-  border: 1px solid gray;
-  width: 45px;
-  height: 38px;
-  padding-top: 5px;
-  margin-right: 5px;
-  text-align: center;
-  display: inline-block;
-  font-size: 1.3em;
-  text-decoration: none;
-  color: #95bdc9;
-  border-radius: 5px;
-  transition: all 0.3s;
-}
-
-.footer .footer-content .about .socials a:hover {
-  color: white;
-  border: 1px solid white;
-  transition: all 0.3s;
-}
-
-
-.socials a img{
- margin-top: -10px;
- width: 80%;
-}
-
-
-#footer .love {
-margin: 10px auto;
-text-align: center; }
-#footer .love .heartbeat {
-  color: #02b3a4;
-  font-size: 16px; }
-#footer .love a {
-  text-decoration: none; }
-
-
 
 
 
